@@ -17,7 +17,7 @@ app.post("/upload", upload.array("images", 12), async (req, res, next) => {
   const files = req.files;
   console.table(files);
 
-  // apply filter
+  // apply any filer of your choice
   // resize
   const resultsArray = [];
   for (let i = 0; i < files.length; i++) {
